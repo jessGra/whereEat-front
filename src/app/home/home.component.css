@@ -1,0 +1,32 @@
+.card-search {
+  border-radius: 8px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.card-search:hover {
+    transform: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+  -moz-transform: none;
+}
+
+.btn-search {
+    background-color: #f5593d;
+    border-color: #f5593d;
+    color: #FFFFFF;
+    margin-right: 0px;
+    border-radius: 0;
+}
+
+.btn-search:hover {
+    background-color:  #f33816;
+    border-color:#f33816;
+}
+
+.titulo{
+    font-weight: 550;
+}
+.latest-offers .section-title {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,102 @@
+<div class="wrapper">
+    <div    class="page-header" style="background-image: url('https://wallpapercave.com/wp/wp1874158.jpg');">
+        <div class="filter"></div>
+        <div  class="container">
+            <div    class="row">
+                <div  class="mr-auto ml-auto">
+                  <div class="card card-search">
+                      <h1 class="presentation-title">Where Eat</h1>
+                      <h1 class="presentation-subtitle text-center">Busca</h1>
+                      <span class="presentation-subtitle text-center">y obten descuentos especiales y trato VIP</span>
+                      <form class="register-form">
+                        <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                          <input type="text" class="form-control" placeholder="Busca restaurantes o comidas" (focus)="focus=true" (blur)="focus=false" >
+                          <button class="btn btn-search">
+                              <i class=" nc-icon nc-zoom-split"> </i>
+                            </button>
+                        </div>
+                      </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div   class="wrapper">
+  <div  class="section latest-offers">
+    <div  class="container">
+      <h3  class="section-title">Últimas Ofertas</h3>
+      <div  class="row">
+        <div  class="col-md-4">
+          <div  class="card card-product card-plain">
+            <div  class="card-image">
+              <a  href="javascript:void(0)">
+                <img  alt="Rounded Image" class="img-rounded img-responsive" 
+                src="https://resizer.mundotkm.com/unsafe/fit-in/1280x720/smart/http://cfus01.mundotkm.com/2017/03/whopper.png">
+              </a>
+              <div  class="card-body">
+                <div  class="card-description">
+                  <h5  class="card-title">Green Velvet Dress</h5>
+                  <p  class="card-description">This is a limited edition dress 
+                    for the fall collection. Comes in 3 colours.
+                  </p>
+                </div>
+                <div  class="price">
+                  <s >3.520 €</s>
+                  <span  class="text-danger">2.900 €</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div  class="col-md-4">
+          <div  class="card card-product card-plain">
+            <div  class="card-image">
+              <a  href="javascript:void(0)">
+                <img  alt="Rounded Image" class="img-rounded img-responsive" 
+                src="https://dam.tbg.com.mx/content/dam/tbg/mexico/natgeo/mx/traveler/agenda/18/02/15/pizza-2.jpg.imgo.jpg">
+              </a>
+              <div  class="card-body">
+                <div  class="card-description">
+                  <h5  class="card-title">Crepe and Organza Dress</h5>
+                  <p  class="card-description">This is a limited edition dress for the fall 
+                    collection. Comes in 3 colours.
+                  </p>
+                </div>
+                <div  class="price">
+                  <s >2.675 €</s>
+                  <span  class="text-danger">2.000 €</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div  class="col-md-4">
+          <div  class="card card-product card-plain">
+            <div  class="card-image">
+              <a  href="javascript:void(0)">
+                <img  alt="Rounded Image" class="img-rounded img-responsive" 
+                src="https://dam.ngenespanol.com/wp-content/uploads/2019/03/tacos-al-pastor-mexico.png">
+              </a>
+              <div  class="card-body">
+                <div  class="card-description">
+                  <h5  class="card-title">Lace Mini Dress</h5>
+                  <p  class="card-description">This is a limited edition dress for the fall 
+                    collection. Comes in 3 colours.
+                  </p>
+                </div>
+                <div  class="price">
+                  <s >3.915 €</s>
+                  <span  class="text-danger">3.125 €</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-resultados></app-resultados>
+</div>
