@@ -11,6 +11,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { RegProductComponent } from './reg-product/reg-product.component';
 import { ResultadosComponent } from './resultados/resultados.component';
+import { RegEmpresaComponent } from './reg-empresa/reg-empresa.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ResultadosComponent } from './resultados/resultados.component';
     HomeComponent,
     NavbarComponent,
     RegProductComponent,
-    ResultadosComponent
+    ResultadosComponent,
+    RegEmpresaComponent
   ],
   imports: [
     BrowserModule,
