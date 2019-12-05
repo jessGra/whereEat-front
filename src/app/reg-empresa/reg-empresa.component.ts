@@ -14,11 +14,38 @@ export class RegEmpresaComponent implements OnInit {
   map: google.maps.Map;
 
   ngOnInit() {
-    let mapProp = {
-      center: new google.maps.LatLng(2.92504, -75.2897),
-      zoom: 15,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProp);
+    this.obtenerUbicacion();
+  }
+
+  obtenerUbicacion() {
+    let coords = {};
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        coords = {
+          lng: position.coords.longitude,
+          lat: position.coords.latitude
+        };
+        this.mapear(coords);
+      }, (error) => {console.log(error); });
+  }
+
+  mapear(coords) {
+    let map = {
+          center: new google.maps.LatLng(coords.lat, coords.lng),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+    this.map = new google.maps.Map(this.gmapElement.nativeElement, map);
+    // agrego marcador en la posicion del usuario
+    let marker1 = new google.maps.Marker({
+      position: {lat: coords.lat, lng: coords.lng},
+      draggable: true,
+      animation: google.maps.Animation.DROP
+      });
+    // Le asignamos el mapa a los marcadores.
+    marker1.setMap(this.map);
+    marker1.addListener('dragend', (event) => {
+      console.log(marker1.getPosition().lat() + " longitud = "+ marker1.getPosition().lng());
+    });
   }
 }
