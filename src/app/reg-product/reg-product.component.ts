@@ -10,6 +10,7 @@ export class RegProductComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    let img;
   }
 
 }
