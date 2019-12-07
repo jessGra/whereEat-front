@@ -45,7 +45,7 @@ export class RegEmpresaComponent implements OnInit {
     // Le asignamos el mapa a los marcadores.
     marker1.setMap(this.map);
     marker1.addListener('dragend', (event) => {
-      console.log(marker1.getPosition().lat() + " longitud = "+ marker1.getPosition().lng());
+      console.log(marker1.getPosition().lat() + ' longitud = ' + marker1.getPosition().lng());
     });
   }
 }
